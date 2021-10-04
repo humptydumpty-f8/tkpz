@@ -11,7 +11,7 @@ public class ex2_1 {
 
         i = 1;
 //        boxed = new Integer(i); // Конструктор
-//        boxed = Integer.valueOf(i);// Фабричний метод
+        boxed = Integer.valueOf(i);// Фабричний метод
         boxed = i;// Автоматична упаковка,
         System.out.println("Boxed value of " + i + ": " + boxed);
 

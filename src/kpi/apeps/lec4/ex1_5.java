@@ -9,7 +9,7 @@ public class ex1_5 {
         double db = 36.6;
         float fl = 36.6F;
 //        float fl = 36.6; //Помилка компіляції!
-
+//
         System.out.println("Неформатоване виведення");
         System.out.println("db= " + db);//db= 36.6
         System.out.println("fl= " + fl);//fl= 36.6
