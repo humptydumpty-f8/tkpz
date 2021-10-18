@@ -20,7 +20,7 @@ public class ex7_1 {
                 .forEach(s -> System.out.println(s));
 
 
-        //2. Використання метода stream() колекції
+        //2. Використання метода stream() Arrays
         System.out.println("2. Method Arrays.stream():");
         String[] nameOfNumbers = {"four", "five", "six"};
         Stream<String> nameOfNumbers2 = Arrays.stream(nameOfNumbers);
