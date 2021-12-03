@@ -8,7 +8,7 @@ import java.awt.event.WindowEvent;
 /**
  * Контейнер Dialog і Panel
  * Діалог відкривається при натисненні кнопки.
- * В ньому розміщується панелі з менеджером компоновки з замовчуванням і з вибраним.
+ * В ньому розміщуються панелі з менеджером компоновки з замовчуванням і з вибраним.
  * Перший використовується для розміщення кнопок ОК і Console, другий - для чекбоксів
  */
 public class ex5_2 {
@@ -48,7 +48,7 @@ public class ex5_2 {
                     d.setLocation(400,300);
                     setForeground(Color.black);
 
-                    //Панель з менеджером розташування за замовчуванням
+                    //Панель з менеджером розташування за замовчуванням FlowLayout
                     Panel inPanel = new Panel();
                     Button btnOk = new Button("OK");
                     Button btnConsole = new Button("Console");
@@ -56,7 +56,7 @@ public class ex5_2 {
                     inPanel.add(btnConsole);
                     d.add(inPanel,BorderLayout.SOUTH);//задаємо розташування панелі в діалозі
 
-                    //Панель з заміненим менеджером розташування
+                    //Панель з заміненим менеджером розташування BorderLayout
                     Panel chckPanel = new Panel(new BorderLayout());
                     Checkbox checkbox1 = new Checkbox("Chk1");
                     chckPanel.add(checkbox1,BorderLayout.NORTH);

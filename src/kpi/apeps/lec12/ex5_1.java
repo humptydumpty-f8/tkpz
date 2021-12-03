@@ -21,11 +21,11 @@ public class ex5_1 {
             //Конструктор
             public FrameDemo() {
                 super("FrameDemo");
-                setSize(300,200);
-                setLocation(200,300);
+                setSize(300, 200);
+                setLocation(200, 300);
 
                 Button btn = new Button("Show dialog");//кнопка виклику діалога
-                add("South",btn);
+                add("South", btn);
                 setBackground(Color.darkGray);
                 setForeground(Color.black);
 
@@ -41,11 +41,12 @@ public class ex5_1 {
             }
 
             //Внутрішній клас діалогу
-            class DialogDemo{
+            class DialogDemo {
+
                 public DialogDemo() {
-                    Dialog d = new Dialog(FrameDemo.this,"Modal dialog",false);
-                    d.setSize(400,300);
-                    d.setLocation(400,300);
+                    Dialog d = new Dialog(FrameDemo.this, "Modal dialog", false);
+                    d.setSize(400, 300);
+                    d.setLocation(400, 300);
                     setForeground(Color.black);
 
                     //Створення панелі з кнопками
@@ -54,7 +55,7 @@ public class ex5_1 {
                     Button btnConsole = new Button("Console");
                     inPanel.add(btnOk);// додавання кнопки в панель
                     inPanel.add(btnConsole);// додавання кнопки в панель
-                    d.add(inPanel,BorderLayout.SOUTH);// додавання панелі в діалогове вікно
+                    d.add(inPanel, BorderLayout.SOUTH);// додавання панелі в діалогове вікно
 
 
                     d.addWindowListener(new WindowAdapter() {
