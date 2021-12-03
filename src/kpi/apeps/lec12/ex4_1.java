@@ -32,7 +32,7 @@ public class ex4_1 {
             //Внутрішній клас діалогового вікна
             class DialogDemo {
                 public DialogDemo() {
-                    Dialog d = new Dialog(FrameDemo.this, "Modal dialog", false);//створення модального вікна
+                    Dialog d = new Dialog(FrameDemo.this, "Modal dialog", true);//створення модального вікна
                     d.setSize(200, 100);
                     d.setLocation(400, 300);
                     setForeground(Color.black);
